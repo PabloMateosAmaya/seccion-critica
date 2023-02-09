@@ -4,7 +4,7 @@ from multiprocessing import Value, Array
 N = 8
 def task(common, tid, turn):
     a = 0
-    for i in range(100):
+    for i in range(20):
         print(f'{tid}−{i}: Non−critical Section')
         a += 1
         print(f'{tid}−{i}: End of non−critical Section')
